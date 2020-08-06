@@ -31,17 +31,66 @@
 				alert("Please Enter your Enrollment Number correctly");
 			}
 		}
+		 function checkPassword(form) { 
+
+                password1 = form.password1.value; 
+
+                password2 = form.password2.value; 
+
+  
+
+                // If password not entered 
+
+                if (password1 == '') 
+
+                    alert ("Please enter Password"); 
+
+                      
+
+                // If confirm password not entered 
+
+                else if (password2 == '') 
+
+                    alert ("Please enter confirm password"); 
+
+                      
+
+                // If Not same return False.     
+
+                else if (password1 != password2) { 
+
+                    alert ("\nPassword did not match: Please try again...") 
+
+                    return false; 
+
+                } 
+
+  
+
+                // If same return True. 
+
+                else{ 
+
+                    alert("welcome") 
+
+                    return true; 
+
+                } 
+
+            }
 	</script>
-	<form>		
+	<form onSubmit="return checkPassword(this)">		
 		<label></label>
-		<input type="text" name="t1" class="nam" placeholder="Enter Your Name" ><br><br>
+		<input type="text" name="t1" class="nam" placeholder="Enter Your Name" onkeypress="return (event.charCode > 64 && 
+    event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" ><br><br>
 		<label></label>
-		<input type="text" name="t2" class="user" placeholder="username" ><br><br>
+		<input type="text" name="t2" class="user" placeholder="username" onkeypress="return (event.charCode > 64 && 
+    event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" ><br><br>
 		<label></label>
 		<input type="email" name="t3" class ="email"placeholder="Enter Your email" ><br><br>
 		<label></label>
-		<input type="password" name="t4"  class ="pass" placeholder="Create  password" ><br><br>
-		<input type="password" name="t5" class="retype" placeholder="retype password" ><br><br>
+		<input type="password" name="t4"  class ="pass" placeholder="Create  password"  id="password1" ><br><br>
+		<input type="password" name="t5" class="retype" placeholder="Confirm password"  id="password2"><br><br>
 		<!--<input type="button" value="Submit" onclick="check(this.form);"><br><br>-->
 		<div class="form-group">
         <button type="submit" class="button" onclick="check(this.form);"> Create Account  </button>
