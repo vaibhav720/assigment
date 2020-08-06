@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" type="text/css" href="todo.css">
+	<title>form</title>
+	<h1 style="text-align: center;">Assigment To Do List </h1>
+</head>
+<body>
+	<script>
+		function check(form)
+		{
+			var a=form.t1.value;
+			if(a=="" || a!=Nan())
+			{
+				alert("Please Enter your name correctly");
+			}
+			var b=form.t2.value;
+			var len=b.length();
+			if(b==null || len<5)
+			{
+				alert("Please Enter your usermame correctly");
+			}
+			var c=form.t3.value;
+			if(c==null || c!=Nan())
+			{
+				alert("Please Enter your branch correctly");
+			}
+			var d=form.t4.value;
+			if(a==null || a==Nan())
+			{
+				alert("Please Enter your Enrollment Number correctly");
+			}
+		}
+	</script>
+	<form>		
+		<label></label>
+		<input type="text" name="t1" class="nam" placeholder="Enter Your Name" ><br><br>
+		<label></label>
+		<input type="text" name="t2" class="user" placeholder="username" ><br><br>
+		<label></label>
+		<input type="email" name="t3" class ="email"placeholder="Enter Your email" ><br><br>
+		<label></label>
+		<input type="password" name="t4"  class ="pass" placeholder="Create  password" ><br><br>
+		<input type="password" name="t5" class="retype" placeholder="retype password" ><br><br>
+		<!--<input type="button" value="Submit" onclick="check(this.form);"><br><br>-->
+		<div class="form-group">
+        <button type="submit" class="button" onclick="check(this.form);"> Create Account  </button>
+    </div>
+    <p class="text-center">Have an account? <a href="login.html">Log In</a> </p>
+
+	</form>
+	
+
+</body>
+</html>

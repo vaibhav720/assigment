@@ -1,0 +1,88 @@
+form{
+	width: 300px;
+    margin: 0 auto;
+
+}
+body{
+	flex-direction: column;
+}
+.login{
+  margin: 0;
+  position: relative;
+  top: 90%;
+  left: 20%;
+  background-color: #000080		;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 2px;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  }
+
+.nam{
+
+  width: 188px;
+  height: 30px;
+  position: relative;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 11px;
+}
+.nam input{
+		width:100%;
+		height:50%;
+		border:none;
+}
+.user {
+  width: 188px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 11px;
+}
+.email {
+  width: 188px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 11px;
+}
+.pass {
+  width: 188px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 11px;
+}
+.retype {
+  width: 188px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 11px;
+}
+.button{
+	background-color: #000080		;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 2px;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  top: 90%;
+  left: 11%;
+
+}
+
